@@ -52,6 +52,8 @@
                         <div class="p-2">
 <?php
 
+
+
    $name = DB::table('admins')->where('email',$lock_email)->value('name');
    $image = DB::table('admins')->where('email',$lock_email)->value('image');
 

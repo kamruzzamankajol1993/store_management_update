@@ -100,7 +100,7 @@ Category List |{{ $ins_name }}
 
                                             <!--  Large modal example -->
                                             <div class="modal fade bs-example-modal-lg{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-lg">
+                                                <div class="modal-dialog ">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="myLargeModalLabel">Update Category</h5>
@@ -170,7 +170,7 @@ Category List |{{ $ins_name }}
 
   <!--  Large modal example -->
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog ">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="myLargeModalLabel">Add New Category</h5>

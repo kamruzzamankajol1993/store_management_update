@@ -111,7 +111,7 @@ Inactive
 
                                             <!--  Large modal example -->
                                             <div class="modal fade bs-example-modal-lg{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-lg">
+                                                <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="myLargeModalLabel">Update Product</h5>
@@ -202,7 +202,7 @@ Inactive
 
   <!--  Large modal example -->
   <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="myLargeModalLabel">Add New Product</h5>
@@ -236,7 +236,7 @@ Inactive
 
                                         <div class="form-group col-md-12 col-sm-12">
                                             <label for="email">Name</label>
-                                            <input type="text" class="form-control form-control-sm" id="email" value="" name="name"  >
+                                            <input type="text" class="form-control form-control-sm" id="email" value="" name="name" required >
                                         </div>
 
 

@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use URL;
+use Session;
+use App\Models\Admin;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
 use Brian2694\Toastr\Facades\Toastr;
@@ -24,7 +26,9 @@ class SessionController extends Controller
 
         $main_url = URL::previous();
 
-        $lock_email = $email;
+        $email_one = Admin::where('id',$email)->value('email');
+
+        $lock_email = $email_one;
         Auth::guard('admin')->logout();
         //dd($lock_email);
         return view('backend.session.lock_screen',compact('lock_email','main_url'));

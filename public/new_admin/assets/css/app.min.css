@@ -715,7 +715,7 @@ body[data-sidebar=dark] #sidebar-menu ul li a:hover i {
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a {
-    color: #99F1FF
+    color: #fff !important
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a:hover {
@@ -772,7 +772,8 @@ body[data-sidebar=dark] .mm-active > i {
 }
 
 body[data-sidebar=dark] .mm-active .active {
-    color: #fff !important
+    color: #fff !important;
+    background-color: #146d7a !important;
 }
 
 body[data-sidebar=dark] .mm-active .active i {

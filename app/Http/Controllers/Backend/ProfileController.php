@@ -46,13 +46,17 @@ class ProfileController extends Controller
 
         $video->name=$request->name;
         $video->email=$request->email;
+        $video->phone=$request->phone;
+        $video->about=$request->about;
+        $video->address=$request->address;
 
-      if($request->hasfile('image')){
+        if ($request->hasfile('image')) {
             $file = $request->file('image');
-            $extension = $file->getClientOriginalExtension();
-            $filename=time().'.'.$extension;
-            $file->move('user-photo/',$filename);
-            $video->image ='user-photo/'. $filename;
+            $extension = $file->getClientOriginalName();
+            $filename = $extension;
+            $file->move('public/uploads/', $filename);
+            $video->image =  'public/uploads/'.$filename;
+
         }
 
         $video->save();

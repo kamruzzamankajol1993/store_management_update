@@ -59,6 +59,7 @@ Inventory List |{{ $ins_name }}
                                                 <th>Product Name</th>
                                                 <th>Supplier Name</th>
                                                 <th>Quantity</th>
+                                                <th>Alert Quantity</th>
                                                 <th>Rack Location</th>
 
                                                 <th>Created At</th>
@@ -86,6 +87,7 @@ Inventory List |{{ $ins_name }}
                                 <td>{{ $user->vendor_id }} </td>
                                 <td>{{ $user->request_number }}</td>
                                 <td>{{ $user->total_quantity }}</td>
+                                <td>{{ $user->total_product }}</td>
                                 <td>{{ $user->request_note }}</td>
 
                                 <td>{{ date('d-m-Y', strtotime($user->request_date))}}</td>

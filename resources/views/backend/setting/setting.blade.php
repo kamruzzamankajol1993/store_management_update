@@ -84,7 +84,7 @@ Setting | {{ $ins_name }}
                                 <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" id="email_address_2" class="form-control form-control-sm" placeholder="Enter your email address" name="phone" value="{{  Auth::guard('admin')->user()->phone }}">
+                                            <input type="text" id="email_address_2" class="form-control form-control-sm" placeholder="Enter your phone" name="phone" value="{{  Auth::guard('admin')->user()->phone }}">
                                         </div>
                                     </div>
                                 </div>

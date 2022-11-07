@@ -75,6 +75,15 @@ class AdminsController extends Controller
         $admins->username = Str::slug($request->name);
         $admins->email = $request->email;
         $admins->password = Hash::make($request->password);
+
+        if ($request->hasfile('image')) {
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalName();
+            $filename = $extension;
+            $file->move('public/uploads/', $filename);
+            $admins->image =  'public/uploads/'.$filename;
+
+        }
         $admins->save();
 
         if ($request->roles) {
@@ -156,6 +165,15 @@ class AdminsController extends Controller
         $admins->username = Str::slug($request->name);
         $admins->email = $request->email;
         $admins->status = $request->status;
+
+        if ($request->hasfile('image')) {
+            $file = $request->file('image');
+            $extension = $file->getClientOriginalName();
+            $filename = $extension;
+            $file->move('public/uploads/', $filename);
+            $admins->image =  'public/uploads/'.$filename;
+
+        }
         if ($request->password) {
             $admins->password = Hash::make($request->password);
         }

@@ -56,7 +56,7 @@ Add Product |{{ $ins_name }}
 
                                         <div class="form-group col-md-6 col-sm-12">
                                             <label for="email">Product Name</label>
-                                            <input type="text" class="form-control form-control-sm" id="email" name="name"  >
+                                            <input type="text" class="form-control form-control-sm" id="email" name="name" required>
                                         </div>
 
 
